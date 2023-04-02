@@ -1,0 +1,272 @@
+body {
+    display:flex;
+    flex-direction:column;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color:#f8f8f8;
+    width:1200px;
+    height:768px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 100px 20px -50px;
+    width: auto;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*---------------------
+  Header section
+---------------------*/
+
+.header-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color: #21209c;
+    width:100%;
+}
+
+.site-logo {
+    display: inline-block;
+    margin-top: 12px;
+    margin-right:50px;
+    float: right;
+}
+.site-logo a{
+    text-decoration:none;
+}
+
+.site-logo_web{
+    color:goldenrod;
+}
+.site-logo_uni{
+    color:white;
+}
+
+.main-menu{
+    margin-left:50px;
+    padding-right:280px;
+}
+.main-menu ul {
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline;
+}
+
+.main-menu ul li a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 60px;
+    font-weight: 600;
+    padding: 20px 0 5px;
+    text-decoration:none;
+}
+
+.main-menu ul li a:hover {
+    color: #d82a4e;
+}
+
+.button ul {
+    list-style: none;
+}
+
+.button ul li a{
+    text-decoration:none;
+    
+}
+.header-btn_1 {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    float: left;
+}
+.header-btn_2 {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    float: left;
+}
+
+/*------------------
+    Body Content 
+------------------*/
+.title_list{
+    background-color:midnightblue;
+    color:white;
+    text-align:center;
+    height:80px;
+    border-radius:5px 5px;
+    margin-bottom:20px;
+}
+.text_list{
+    padding-top:20px;
+}
+
+
+/*----------------
+    Footer Style
+----------------*/
+.footer_section {
+    position: relative;
+    bottom: -270px;
+    left: 0px;
+    width: 112.4%;
+    background-color: blue;
+    color: white;
+}
+
+.footer_section div {
+    display:inline-block;
+    padding:10px 10px 0px 20px;
+    text-align:center;
+}
+.footer_address{
+    float:right;
+}
+.footer_map{
+    position:relative;
+    right:200px;
+}
+.footer_contact{
+    position:relative;
+    left:-83px;
+    float:left;
+}
+.footer_section div ul {
+    list-style: none;
+    padding-right: 20px;
+    text-align: center;
+}
+.footer_section div ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.footer_section div ul li a:hover {
+    color: #d82a4e;
+    text-decoration: none;
+}
+.footer_div_form_a {
+    position:relative;
+    left:-130px;
+    background-color:black;
+    color:white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    float:left;
+    margin-left:160px;
+    text-decoration:none;
+}
+
+.footer_copy{
+    position:relative;
+    bottom:-40px;
+    left:70px;
+    display:inline-block;
+}
+.footer_instagram {
+    font-size: 24px;
+    color: #DD2A7B;
+}
+.footer_google {
+    font-size: 24px;
+    color: #db3236;
+}
+.footer_facebook {
+    font-size: 24px;
+    color: #4267B2;
+}
+.footer_twitter {
+    font-size: 24px;
+    color: #00acee;
+}
+.footer_telegram {
+    font-size: 24px;
+    color: #229ED9;
+}
+@font-face {
+    font-family: 'vazir-Bold';
+    src: url(../fonts/Vazir-Bold.eot) format('embedded-opentype');
+    src: url(../fonts/Vazir-Bold.eot?#iefix) format('embedded-opentype');
+    src: url(../fonts/Vazir-Bold.ttf) format('truetype');
+    src: url(../fonts/Vazir-Bold.woff) format('woff');
+    src: url(../fonts/Vazir-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../Vazir-Regular.eot');
+    src: url('../fonts/Vazir-Regular.eot');
+    src: url('../fonts/Vazir-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Regular.woff2') format('woff2'), url('../fonts/Vazir-Regular.woff') format('woff'), url('../fonts/Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Bold.woff2') format('woff2'), url('../fonts/Vazir-Bold.woff') format('woff'), url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Thin.woff2') format('woff2'), url('../fonts/Vazir-Thin.woff') format('woff'), url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Light.woff') format('woff'), url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Medium.woff2') format('woff2'), url('../fonts/Vazir-Medium.woff') format('woff'), url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Black.woff2') format('woff2'), url('../fonts/Vazir-Black.woff') format('woff'), url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+}
+
+* {
+    font-family: Vazir;
+}
