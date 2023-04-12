@@ -178,8 +178,10 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DbCodeFirstContext.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\ViewModels\LoginUserViewModel.cs" />
     <Compile Include="Models\ViewModels\RegisterStudentsViewModel.cs" />
     <Compile Include="Models\ViewModels\StudentsViewModel.cs" />
+    <Compile Include="OtherClasses\HashPass.cs" />
     <Compile Include="OtherClasses\PersianCulture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -213,6 +215,7 @@
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Views\User\StudentList.cshtml" />
     <Content Include="Views\User\RegisterNewStudent.cshtml" />
+    <Content Include="Views\User\LoginUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

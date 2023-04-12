@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using CodeFirst_Training.Models;
 using CodeFirst_Training.Models.ViewModels;
+using S05E01.OtherClasses;
 
 namespace CodeFirst_Training.Controllers
 {
@@ -52,7 +53,7 @@ namespace CodeFirst_Training.Controllers
                     Family = NewStudent.Family,
                     Phone = NewStudent.Phone,
                     AddressEmail = "newStudent@gmail.com",
-                    Password = NewStudent.Password,
+                    Password = HashPass.GetSha256(NewStudent.Password),
                     RegisterDate = DateTime.Now,
                     isActive = true
                 });
@@ -64,5 +65,37 @@ namespace CodeFirst_Training.Controllers
 
             return View(NewStudent);
         }
+
+        [HttpGet]
+        public ActionResult LoginUser()
+        {
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult LoginUser([Bind(Include = "UserName,Password")]LoginUserViewModel loginUser)
+        {
+            if (ModelState.IsValid)
+            {
+                string Pass = HashPass.GetSha256(loginUser.Password);
+
+                var LoginUser = db.Users.FirstOrDefault(t => t.Phone == loginUser.UserName && t.Password == Pass);
+
+                if (LoginUser == null)
+                {
+                    ModelState.AddModelError("UserName", "نام کاربری یا رمز عبور اشتباه است");
+                }
+                else
+                {
+                    return Redirect("https://www.varzesh3.com/");
+                }
+
+            }
+
+
+            return View();
+        }
     }
+
 }
